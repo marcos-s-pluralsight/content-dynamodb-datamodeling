@@ -25,7 +25,7 @@ def main():
     args = vars(ap.parse_args())
     tableName = args['table']
 
-    URI = "https://dynamodblabs.s3.amazonaws.com/datarelationships/target.json"
+    URI = "https://dynamodblabs--1669141537.s3.amazonaws.com/datarelationships/target.json"
     httppool = urllib3.PoolManager()
     response = httppool.request('GET', URI)
     rawData = response.data.decode()
